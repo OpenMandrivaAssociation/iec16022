@@ -2,7 +2,7 @@
 
 %define name	iec16022
 %define version	0.2.4
-%define rel	1
+%define rel	2
 
 %define major	0
 %define libname	%mklibname %{name}_ %{major}
@@ -36,6 +36,9 @@ Shared libraries for %{name}.
 %package -n %{devname}
 Summary:	ISO/IEC 16022 development files
 Group:		Development/C
+Requires:	%{libname} = %{version}-%{release}
+Provides:	%{name}-devel = %{version}-%{release}
+Provides:	lib%{name}-devel = %{version}-%{release}
 
 %description  -n %{devname}
 Development files for %{name}.
