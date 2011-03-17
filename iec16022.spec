@@ -12,8 +12,7 @@ Name:           %{name}
 Version:        %{version}
 Release:        %mkrel %{rel}
 Summary:        Generate ISO/IEC 16022 2D barcodes
-
-Group:          Applications/Engineering
+Group:          Graphics
 License:        GPLv2+
 URL:            http://www.datenfreihafen.org/projects/iec16022.html
 Source0:        http://www.datenfreihafen.org/~stefan/iec16022/%{name}-%{version}.tar.gz
@@ -29,7 +28,7 @@ standard.
 
 %package -n %{libname}
 Summary:	ISO/IEC 16022 libraries
-Group:		System Environment/Libraries
+Group:		System/Libraries
 
 %description -n %{libname}
 Shared libraries for %{name}.
