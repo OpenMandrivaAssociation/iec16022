@@ -35,7 +35,7 @@ Shared libraries for %{name}.
 
 %package -n %{devname}
 Summary:	ISO/IEC 16022 development files
-Group:		Development/Libraries
+Group:		Development/C
 
 %description  -n %{devname}
 Development files for %{name}.
