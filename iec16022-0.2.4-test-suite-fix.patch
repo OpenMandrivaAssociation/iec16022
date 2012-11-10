@@ -1,0 +1,21 @@
+diff -dur iec16022-0.2.4.orig/test/testsuite.sh iec16022-0.2.4/test/testsuite.sh
+--- iec16022-0.2.4.orig/test/testsuite.sh	2008-11-30 03:22:32.000000000 +0300
++++ iec16022-0.2.4/test/testsuite.sh	2010-06-02 14:15:14.130267000 +0300
+@@ -8,11 +8,11 @@
+ ../iec16022 -o testsuite-test.bin -f Bin -c "Aolash3l dee6Ieke OhBohm1C MengaR9m zaHaoQu2 huW3Uer8 ieg7chaJ haiKua1o"
+ ../iec16022 -o testsuite-test.hex -f Hex -c "Aolash3l dee6Ieke OhBohm1C MengaR9m zaHaoQu2 huW3Uer8 ieg7chaJ haiKua1o"
+ 
+-diff -b testsuite-test.text testsuite-example.text && echo "Text test passed" || echo "Text test FAILED" || FAILED=1
+-diff -b testsuite-test.eps testsuite-example.eps && echo "EPS test passed" || echo "EPS test FAILED" || FAILED=1
+-diff -b testsuite-test.png testsuite-example.png && echo "PNG test passed" || echo "PNG test FAILED" || FAILED=1
+-diff -b testsuite-test.bin testsuite-example.bin && echo "Bin test passed" || echo "Bin test FAILED" || FAILED=1
+-diff -b testsuite-test.hex testsuite-example.hex && echo "Hex test passed" || echo "Hex test FAILED" || FAILED=1
++diff -b testsuite-test.text testsuite-example.text && echo "Text test passed" || { echo "Text test FAILED" && FAILED=1 ; }
++diff -b testsuite-test.eps testsuite-example.eps && echo "EPS test passed" || { echo "EPS test FAILED" && FAILED=1 ; }
++diff -b testsuite-test.png testsuite-example.png && echo "PNG test passed" || { echo "PNG test FAILED" && FAILED=1 ; }
++diff -b testsuite-test.bin testsuite-example.bin && echo "Bin test passed" || { echo "Bin test FAILED" && FAILED=1 ; }
++diff -b testsuite-test.hex testsuite-example.hex && echo "Hex test passed" || { echo "Hex test FAILED" && FAILED=1 ; }
+ 
+ rm testsuite-test.*
+ 
+Only in iec16022-0.2.4/test: testsuite.sh~
