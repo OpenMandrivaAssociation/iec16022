@@ -80,3 +80,14 @@ rm -rf %{buildroot}
 %{_includedir}/iec16022/
 %{_libdir}/libiec16022.so
 %{_libdir}/pkgconfig/libiec16022.pc
+
+
+%changelog
+* Thu Mar 17 2011 Jani Välimaa <wally@mandriva.org> 0.2.4-2mdv2011.0
++ Revision: 646250
+- fix requires and provides
+
+* Thu Mar 17 2011 Jani Välimaa <wally@mandriva.org> 0.2.4-1
++ Revision: 646233
+- initial import based on Fedora .spec
+
