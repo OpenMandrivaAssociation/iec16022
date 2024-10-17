@@ -14,7 +14,7 @@ Release:        %mkrel %{rel}
 Summary:        Generate ISO/IEC 16022 2D barcodes
 Group:          Graphics
 License:        GPLv2+
-URL:            http://www.datenfreihafen.org/projects/iec16022.html
+URL:            https://www.datenfreihafen.org/projects/iec16022.html
 Source0:        http://www.datenfreihafen.org/~stefan/iec16022/%{name}-%{version}.tar.gz
 Patch0:         %{name}-%{version}-test-suite-fix.patch
 
