@@ -10,7 +10,7 @@
 
 Name:           %{name}
 Version:        %{version}
-Release:        %mkrel %{rel}
+Release:        %{rel}.1
 Summary:        Generate ISO/IEC 16022 2D barcodes
 Group:          Graphics
 License:        GPLv2+
